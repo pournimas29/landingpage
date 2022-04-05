@@ -25,11 +25,14 @@ p {
     font-size: 0.9rem;
 }
 
+h2 {
+    font-size: 1.8rem;
+    color: #f36c21;
+}
+
 .theme {
     border-radius: 5px;
     border: 2px solid #f36c21;
-    text-align: center;
-    font-size: 12px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -39,12 +42,22 @@ p {
     }
 }
 
+.form-control {
+    line-height: 2.3;
+}
+
 .text-color {
     color: #f36c21;
 }
 
 .btn {
     background-color: #f36c21;
+    min-width: 70%;
+    height: 50px;
+}
+
+.card {
+    background-color: transparent;
 }
 
 .payment {
@@ -54,4 +67,5 @@ p {
 
 .social-icon {
     background-color: aliceblue;
+    width: 60px;
 }
