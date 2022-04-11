@@ -76,6 +76,10 @@ input::-webkit-inner-spin-button {
     max-width: 900px;
 }
 
+.text-color {
+    color: #f36c21;
+}
+
 .btn {
     background-color: #f36c21;
     height: 64px;
