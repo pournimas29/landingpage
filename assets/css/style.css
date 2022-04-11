@@ -1,12 +1,13 @@
 html,
 body {
     width: 100%;
-    height: 100%
+    height: 100%;
+    margin: 0px
 }
 
 #home {
     background-image: url("../images/landing-page-bg.jpg");
-    height: 100vh;
+    /* height: 100vh; */
     /* width: 100%; */
     background-size: cover;
     background-color: black;
@@ -16,11 +17,6 @@ img {
     max-width: 100%;
 }
 
-.logo {
-    height: 100%;
-    width: 500px;
-}
-
 .text {
     font-size: 1.5rem;
     color: #f36c21;
@@ -28,17 +24,41 @@ img {
 
 p {
     margin: auto !important;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #f36c21;
+}
+
+h3 {
+    color: #f36c21;
+}
+
+h6 {
+    margin-bottom: 0;
+}
+
+input {
+    caret-color: #f36c21;
+    font-size: 0.9rem !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .theme {
     border-radius: 5px;
     border: 2px solid #f36c21;
+}
+
+.form-control:focus {
+    border: 2px solid #f36c21;
+    box-shadow: none;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -52,27 +72,71 @@ h2 {
     max-width: 900px;
 }
 
-.form-control {
-    line-height: 2.3;
-}
-
 .text-color {
     color: #f36c21;
 }
 
 .btn {
     background-color: #f36c21;
-    min-width: 70%;
-    height: 50px;
+    height: 64px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn:focus {
+    border: 2px solid #f36c21;
+    box-shadow: none;
+}
+
+.text {
+    height: 60px;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.sizing {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
     background-color: transparent;
 }
 
-.age {
-    background-color: darkgrey;
+
+/* .age {
+    background-color: rgb(50, 50, 50);
     cursor: pointer;
+    font-size: 17px;
+} */
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dot:hover::after {
+    content: "Only 18+ people should use the services and should use it
+ responsibly. Players should be aware of any financial risk and govern themselves accordingly position: absolute;
+    background-color: red;
+}
+
+a:hover {
+    background-color: rgb(90, 90, 90);
 }
 
 .payment {
@@ -86,12 +150,12 @@ h2 {
 
 .social-icon a {
     display: flex;
-    align-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 
 .social-icon a img {
-    width: 11%;
-    height: 100%;
-    padding: 0 1rem;
+    width: 10%;
+    height: 80%;
+    padding: 0.5rem;
 }
