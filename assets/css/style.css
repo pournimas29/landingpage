@@ -1,14 +1,5 @@
-html,
-body {
-    /* width: 100%;
-    height: 100%; */
-    /* margin: 0px; */
-}
-
 #home {
-    background-image: url("../images/landing-page-bg.jpg");
-    /* height: 100vh; */
-    /* width: 100%; */
+    background: url("../images/landing-page-bg.jpg") no-repeat;
     background-size: cover;
     background-color: black;
 }
@@ -21,9 +12,22 @@ img {
     max-width: 100%;
 }
 
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    img {
+        max-width: ;
+    }
+} */
+
 .text {
     font-size: 1.5rem;
     color: #f36c21;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .text {
+        font-size: 1.1rem;
+    }
 }
 
 p {
@@ -46,21 +50,9 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.theme {
-    border-radius: 5px;
-    border: 2px solid #f36c21;
-}
-
 .form-control:focus {
     border: 2px solid #f36c21;
     box-shadow: none;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .theme {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 .topbar h5 {
@@ -71,8 +63,20 @@ input::-webkit-inner-spin-button {
     line-height: 1.5;
 }
 
-.page {
-    max-width: 900px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .topbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .text-color {
@@ -87,24 +91,14 @@ input::-webkit-inner-spin-button {
 }
 
 .btn:focus {
-    /* border: 2px solid #f36c21; */
     box-shadow: none;
 }
-
-
-/* .text {
-    height: 60px;
-} */
 
 .sizing {
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.card {
-    background-color: transparent;
 }
 
 .dot {
@@ -132,11 +126,6 @@ input::-webkit-inner-spin-button {
     color: white;
 }
 
-
-/* a:hover {
-    background-color: rgb(90, 90, 90);
-} */
-
 .payment {
     font-size: 2rem;
     color: #f36c21;
@@ -157,4 +146,43 @@ input::-webkit-inner-spin-button {
     width: 4rem;
     height: 80%;
     padding: 0.5rem;
+}
+
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .social-icon a img {
+        width: 1.7rem;
+        height: 80%;
+        padding: 0.1rem;
+    }
+} */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
+    .social-icon a img {
+        width: 1.7rem;
+        height: 80%;
+        padding: 0.1rem;
+    }
+}
+
+@media only screen and (max-device-width: 280px) {
+    .social-icon a img {
+        width: 1.4rem;
+        height: 80%;
+        padding: 0.1rem;
+    }
+    .topbar h5 {
+        font-size: 1rem;
+    }
+    /* .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .w-50 {
+        width: 75% !important;
+    }
 }
