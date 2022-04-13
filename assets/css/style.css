@@ -4,50 +4,18 @@
     background-color: black;
 }
 
-a {
-    text-decoration: none;
-}
-
-img {
+.image {
     max-width: 100%;
 }
-
-
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    img {
-        max-width: ;
-    }
-} */
 
 .text {
     font-size: 1.5rem;
     color: #f36c21;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .text {
-        font-size: 1.1rem;
-    }
-}
-
-p {
-    margin: auto !important;
-    font-size: 1.3rem;
-}
-
-h6 {
-    margin-bottom: 0;
-}
-
-input {
+.tfield {
     caret-color: #f36c21;
     font-size: 0.9rem !important;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 .form-control:focus {
@@ -61,22 +29,6 @@ input::-webkit-inner-spin-button {
     border: 2px solid #f36c21;
     border-radius: 5px;
     line-height: 1.5;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .topbar {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .topbar {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 .text-color {
@@ -99,6 +51,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .dot {
@@ -126,21 +79,9 @@ input::-webkit-inner-spin-button {
     color: white;
 }
 
-.payment {
-    font-size: 2rem;
-    color: #f36c21;
-}
-
 .social-icon {
     background-color: aliceblue;
 }
-
-
-/* .social-icon a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .social-icon a img {
     width: 4rem;
@@ -148,14 +89,33 @@ input::-webkit-inner-spin-button {
     padding: 0.5rem;
 }
 
-
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .social-icon a img {
-        width: 1.7rem;
-        height: 80%;
-        padding: 0.1rem;
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .imgSize {
+        width: 75% !important;
     }
-} */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .topbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .text {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
     .social-icon a img {
@@ -174,15 +134,9 @@ input::-webkit-inner-spin-button {
     .topbar h5 {
         font-size: 1rem;
     }
-    /* .topbar {
+    .topbar {
         display: flex;
         align-items: center;
         justify-content: center;
-    } */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .w-50 {
-        width: 75% !important;
     }
 }
