@@ -1,0 +1,20 @@
+#home {
+    background-color: black;
+}
+
+.sizing {
+    background: aliceblue;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sizing:hover::after {
+    content: jay;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    max-width: 300px;
+}
